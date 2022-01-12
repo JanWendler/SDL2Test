@@ -1,5 +1,5 @@
 #include <iostream>
-#define SDL_MAIN_HANDLED
+//#define SDL_MAIN_HANDLED
 #include <SDL2/SDL.h>
 
 std::string getResourcePath(std::string pictureFile);
@@ -59,6 +59,7 @@ int main(int argc, char* argv[])
 	SDL_DestroyRenderer(ren);
 	SDL_DestroyWindow(win);
 	SDL_Quit();
+	return 0;
 }
 
 /// \brief gets full path of picture. picture must be in the pictures folder of the project
