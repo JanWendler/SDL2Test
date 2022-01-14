@@ -1,6 +1,6 @@
 #include <iostream>
 //#define SDL_MAIN_HANDLED
-#include <SDL2/SDL.h>
+#include "include/SDL2/SDL.h"
 
 std::string getResourcePath(std::string&& pictureFile);
 
