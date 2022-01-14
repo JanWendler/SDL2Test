@@ -10,5 +10,5 @@ link_directories(${PROJECT_SOURCE_DIR}/lib)
 set(SOURCE_FILES main.cpp)
 
 add_executable(SLD2Test main.cpp)
-
+set_target_properties(SLD2Test PROPERTIES COMPILE_OPTIONS "-m32" LINK_FLAGS "-m32")
 target_link_libraries(SLD2Test mingw32 SDL2main SDL2 )
