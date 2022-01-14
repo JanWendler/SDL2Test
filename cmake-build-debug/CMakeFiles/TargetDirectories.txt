@@ -1,4 +1,4 @@
-C:/Users/Jan/Projects/SDL2Test/cmake-build-debug/CMakeFiles/SLD2Test.dir
+C:/Users/Jan/Projects/SDL2Test/cmake-build-debug/CMakeFiles/WindowsTest.dir
 C:/Users/Jan/Projects/SDL2Test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/Jan/Projects/SDL2Test/cmake-build-debug/CMakeFiles/LinuxTest.dir
 C:/Users/Jan/Projects/SDL2Test/cmake-build-debug/CMakeFiles/edit_cache.dir
