@@ -21,6 +21,10 @@ jobs:
         shell: bash
         run: git submodule update --init
 
+      - name: add 32 bit compiler
+        shell: bash
+        run: sudo apt-get install gcc-multilib g++-multilib
+
       - name: add SDL2
         shell: bash
         run: |
