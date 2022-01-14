@@ -15,6 +15,9 @@ add_executable(${WINDOWS_EXE} ${SOURCE_FILES})
 set_target_properties(${WINDOWS_EXE} PROPERTIES COMPILE_OPTIONS "-m32" LINK_FLAGS "-m32")
 target_link_libraries(${WINDOWS_EXE} ${SDL2_LIBRARIES})
 
+include_directories(${PROJECT_SOURCE_DIR}/include)
+link_directories(${PROJECT_SOURCE_DIR}/lib)
+
 set(LINUX_EXE LinuxTest)
 add_executable(${LINUX_EXE} ${SOURCE_FILES})
 set_target_properties(${LINUX_EXE} PROPERTIES COMPILE_OPTIONS "-m32" LINK_FLAGS "-m32")
