@@ -2,7 +2,7 @@
 //#define SDL_MAIN_HANDLED
 #include <SDL2/SDL.h>
 
-std::string getResourcePath(std::string pictureFile);
+std::string getResourcePath(std::string&& pictureFile);
 
 int main(int argc, char* argv[])
 {
@@ -44,8 +44,8 @@ int main(int argc, char* argv[])
 		SDL_Quit();
 		return 1;
 	}
-	for (int i = 0; i < 3; ++i)
-	{
+	//for (int i = 0; i < 3; ++i)
+	//{
 		//First clear the renderer
 		SDL_RenderClear(ren);
 		//Draw the texture
@@ -54,7 +54,7 @@ int main(int argc, char* argv[])
 		SDL_RenderPresent(ren);
 		//Take a quick break after all that hard work
 		SDL_Delay(1000);
-	}
+	//}
 	SDL_DestroyTexture(tex);
 	SDL_DestroyRenderer(ren);
 	SDL_DestroyWindow(win);
@@ -65,7 +65,7 @@ int main(int argc, char* argv[])
 /// \brief gets full path of picture. picture must be in the pictures folder of the project
 /// \param pictureFile name of picture
 /// \return string of path to picture
-std::string getResourcePath(std::string pictureFile)
+std::string getResourcePath(std::string&& pictureFile)
 {
-	return "C:/Users/Jan/Projects/SLD2Test/pictures/" + std::move(pictureFile);
+	return R"(..\pictures\)" + std::move(pictureFile);
 }
